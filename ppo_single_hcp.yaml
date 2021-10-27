@@ -1,0 +1,27 @@
+# environment configs
+min_size: 34
+max_size: 103
+gamma: 0.95
+train_sample: 50
+test_sample: 20
+
+# learning configs
+batch_size: 1
+lr_steps: []
+max_timesteps: 500
+k_epochs: 10
+update_timestep: 8
+learning_rate: 0.001
+eps_clip: 0.1
+
+# model parameters
+node_output_size: 16
+gnn_layers: 3
+
+# test parameters
+search_size: 12
+
+# misc configs
+log_interval: 1
+test_interval: 100
+max_episodes: 200
