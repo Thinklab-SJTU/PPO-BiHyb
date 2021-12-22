@@ -55,10 +55,10 @@ And Here is our implementation of the proposed framework on 3 problems:
 | Nearest Neighbor     | 79.6                         | 0%           |
 | Farthest Insertion   | 133.0                        | 0%           |
 | LKH3-fast            | 13.8                         | 0%           |
-| LKH3-accu            | 6.3                          | 20%          |
+| LKH3-accu            | **6.3**                          | 20%          |
 | PPO-Single           | 9.5                          | 0%           |
 | Random-BiHyb         | 10.0                         | 0%           |
-| **PPO-BiHyb (ours)** | **6.7**                      | **25%**      |
+| **PPO-BiHyb (ours)** | 6.7                      | **25%**      |
 
 ## Environment set up
 
