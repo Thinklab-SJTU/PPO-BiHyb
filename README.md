@@ -21,7 +21,7 @@ And Here is our implementation of the proposed framework on 3 problems:
 ![implement-on-3-problems](figures/implement-on-3-problems.png)
 * **DAG scheduling** problem models the computer resource scheduling problem in data centers, where the computer jobs are represented by Directed Acyclic Graphs (DAGs) and our aim is to minimize the makespan time to finish all jobs as soon as possible. This optimization problem is NP-hard.
 * **Graph Edit Distance (GED)** problem is a popular graph distance metric, and it is inherently an NP-hard combinatorial optimization problem whose aim is to minimize the graph edit cost between two graphs.
-* **Hamiltonian Cycle Problem (HCP)** is similar to the famous [7 bridges problem by Euler](https://en.wikipedia.org/wiki/Seven_Bridges_of_K%C3%B6nigsberg): given a graph, decide whether exist a valid Hamiltonian cycle in this graph (i.e. a path that travels all nodes without visiting a node twice). This decision problem is NP-complete.
+* **Hamiltonian Cycle Problem (HCP)** is similar (but more difficult) to the famous [7 bridges problem by Euler](https://en.wikipedia.org/wiki/Seven_Bridges_of_K%C3%B6nigsberg): given a graph, decide whether exist a valid Hamiltonian cycle in this graph (i.e. a path that travels all nodes without visiting a node twice). This decision problem is NP-complete.
 
 ## Experiment Results
 
