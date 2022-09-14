@@ -69,10 +69,10 @@ Install required pacakges:
 export TORCH=1.7.0
 export CUDA=cu101
 pip install torch==1.7.1+${CUDA} torchvision==0.8.2+${CUDA} torchaudio===0.7.2 -f https://download.pytorch.org/whl/torch_stable.html
-pip install --no-index --upgrade torch-scatter -f https://pytorch-geometric.com/whl/torch-${TORCH}+${CUDA}.html
-pip install --no-index --upgrade torch-sparse -f https://pytorch-geometric.com/whl/torch-${TORCH}+${CUDA}.html
-pip install --no-index --upgrade torch-spline-conv -f https://pytorch-geometric.com/whl/torch-${TORCH}+${CUDA}.html
-pip install --upgrade torch-geometric
+pip install --no-index --upgrade torch-scatter==2.0.6 -f https://pytorch-geometric.com/whl/torch-${TORCH}+${CUDA}.html
+pip install --no-index --upgrade torch-sparse==0.6.9 -f https://pytorch-geometric.com/whl/torch-${TORCH}+${CUDA}.html
+pip install --no-index --upgrade torch-spline-conv==1.2.1 -f https://pytorch-geometric.com/whl/torch-${TORCH}+${CUDA}.html
+pip install --upgrade torch-geometric==1.7.0
 pip install tensorboard
 pip install networkx==2.2
 pip install ortools
