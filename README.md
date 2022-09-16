@@ -73,7 +73,8 @@ pip install --no-index --upgrade torch-scatter==2.0.6 -f https://pytorch-geometr
 pip install --no-index --upgrade torch-sparse==0.6.9 -f https://pytorch-geometric.com/whl/torch-${TORCH}+${CUDA}.html
 pip install --no-index --upgrade torch-spline-conv==1.2.1 -f https://pytorch-geometric.com/whl/torch-${TORCH}+${CUDA}.html
 pip install --upgrade torch-geometric==1.7.0
-pip install tensorboard
+pip install tensorboard==1.14.0
+pip install tensorflow==1.14.0
 pip install networkx==2.2
 pip install ortools
 pip install texttable
