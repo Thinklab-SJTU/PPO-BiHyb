@@ -137,7 +137,7 @@ python hcp_ppo_single_train.py --config ppo_single_hcp.yaml
 ```
 
 ### Some Remarks
-The yaml configs are set for the smallest sized problems by default. For PPO-Single, you may need to adjust the ``max_timesteps`` config for larger-sized problems to ensures that the RL agent can predict a valid solution.
+The yaml configs are set for the smallest sized problems by default. For PPO-Single, you may need to adjust the ``max_timesteps`` config for larger-sized problems to ensure that the RL agent can predict a valid solution.
 
 ## Pretrained models
 We provide pretrained models for PPO-BiHyb on these three problems, which are stored in ``./pretrained``. To use your own parameters, please set the ``test_model_weight`` configuration in the yaml file.
