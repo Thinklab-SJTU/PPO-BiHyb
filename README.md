@@ -143,7 +143,7 @@ The yaml configs are set for the smallest sized problems by default. For PPO-Sin
 We provide pretrained models for PPO-BiHyb on these three problems, which are stored in ``./pretrained``. To use your own parameters, please set the ``test_model_weight`` configuration in the yaml file.
 
 ## Citation and Credits
-If you find our paper/code useful in your research, please citing
+If you find our paper/code useful in your research, please cite
 ```
 @inproceedings{wang2021bilevel,
     title={A Bi-Level Framework for Learning to Solve Combinatorial Optimization on Graphs}, 
