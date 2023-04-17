@@ -177,7 +177,7 @@ if __name__ == '__main__':
     import random
     from torch.multiprocessing import Pool, cpu_count
 
-    from tsp_env import TSPEnv
+    from utils.tsp_env import TSPEnv
     from hcp_ppo_bihyb_train import ActorCritic, parse_arguments
 
     args = parse_arguments()

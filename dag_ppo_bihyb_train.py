@@ -11,10 +11,10 @@ import numpy as np
 from torch.multiprocessing import Pool, cpu_count
 from copy import deepcopy
 
-from dag_ppo_bihyb_model import ActorNet, CriticNet, GraphEncoder
-from utils import print_args
-from tfboard_helper import TensorboardUtil
-from dag_graph import DAGraph
+from src.dag_ppo_bihyb_model import ActorNet, CriticNet, GraphEncoder
+from utils.utils import print_args
+from utils.tfboard_helper import TensorboardUtil
+from utils.dag_graph import DAGraph
 from dag_data.dag_generator import load_tpch_tuples
 from dag_ppo_bihyb_eval import evaluate
 
@@ -442,7 +442,7 @@ def parse_arguments():
     args = parser.parse_args()
 
     if args.config:
-        with open(args.config) as f:
+        with open('config/' + args.config) as f:
             cfg_dict = yaml.load(f)
             for key, val in cfg_dict.items():
                 assert hasattr(args, key), f'Unknown config key: {key}'
