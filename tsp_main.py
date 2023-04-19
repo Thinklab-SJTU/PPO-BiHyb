@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
-from tsp_argparser  import parser
-from tsp_algorithms import (calc_nearest_neighbor_tour
+from utils.tsp_argparser  import parser
+from utils.tsp_algorithms import (calc_nearest_neighbor_tour
                         , calc_nearest_neighbor_tour_len
                         , calc_lkh_tour_len
                         , calc_furthest_insertion_tour

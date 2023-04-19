@@ -11,11 +11,11 @@ import numpy as np
 from torch.multiprocessing import Pool, cpu_count
 from copy import deepcopy
 
-from hcp_ppo_bihyb_model import ActorNet, CriticNet, GraphEncoder
-from utils import print_args
-from tfboard_helper import TensorboardUtil
+from src.hcp_ppo_bihyb_model import ActorNet, CriticNet, GraphEncoder
+from utils.utils import print_args
+from utils.tfboard_helper import TensorboardUtil
 from hcp_ppo_bihyb_eval import evaluate
-from tsp_env import TSPEnv
+from utils.tsp_env import TSPEnv
 
 
 class ItemsContainer:
@@ -381,7 +381,7 @@ def parse_arguments():
                                                  '1) set parameters by command line arguments \n'
                                                  '2) specify --config path/to/config.yaml')
     # environment configs
-    parser.add_argument('--solver_type', default='hungarian')
+    parser.add_argument('--solver_type', default='lkh-fast')
     parser.add_argument('--resource_limit', default=600, type=float)
     parser.add_argument('--add_graph_features', action='store_true')
     parser.add_argument('--min_size', default=100, type=int)
@@ -421,7 +421,7 @@ def parse_arguments():
     args = parser.parse_args()
 
     if args.config:
-        with open(args.config) as f:
+        with open('config/' + args.config) as f:
             cfg_dict = yaml.load(f)
             for key, val in cfg_dict.items():
                 assert hasattr(args, key), 'Unknown config key: {key}'

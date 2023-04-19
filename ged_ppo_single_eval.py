@@ -172,7 +172,7 @@ if __name__ == '__main__':
     import random
     from torch.multiprocessing import Pool, cpu_count
 
-    from ged_env import GEDenv
+    from utils.ged_env import GEDenv
     from ged_ppo_single_train import ActorCritic, parse_arguments
 
     args = parse_arguments()

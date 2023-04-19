@@ -11,11 +11,11 @@ import numpy as np
 from torch.multiprocessing import Pool, cpu_count
 from copy import deepcopy
 
-from ged_ppo_bihyb_model import ActorNet, CriticNet, GraphEncoder
-from utils import print_args
-from tfboard_helper import TensorboardUtil
+from src.ged_ppo_bihyb_model import ActorNet, CriticNet, GraphEncoder
+from utils.utils import print_args
+from utils.tfboard_helper import TensorboardUtil
 from ged_ppo_bihyb_eval import evaluate
-from ged_env import GEDenv
+from utils.ged_env import GEDenv
 
 
 class ItemsContainer:
@@ -434,7 +434,7 @@ def parse_arguments():
     args = parser.parse_args()
 
     if args.config:
-        with open(args.config) as f:
+        with open('config/' + args.config) as f:
             cfg_dict = yaml.load(f)
             for key, val in cfg_dict.items():
                 assert hasattr(args, key), f'Unknown config key: {key}'

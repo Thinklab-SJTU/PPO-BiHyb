@@ -158,7 +158,7 @@ if __name__ == '__main__':
     import random
     from torch.multiprocessing import Pool, cpu_count
 
-    from dag_graph import DAGraph
+    from utils.dag_graph import DAGraph
     from dag_data.dag_generator import load_tpch_tuples
     from dag_ppo_single_train import ActorCritic, parse_arguments
 
