@@ -104,6 +104,8 @@ And you should find an executable at ``./LKH-3.0.6/LKH``, which will be called b
 ## Run Experiments
 We provide the implementation of PPO-BiHyb and the single-level RL baseline PPO-Single used in our paper. To run evaluation from a pretrained model, replace ``train`` by ``eval`` in the following commands.
 
+The config files are in the directory ``config/``.
+
 ### DAG Scheduling
 PPO-BiHyb:
 ```
